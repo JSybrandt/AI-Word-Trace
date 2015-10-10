@@ -1,3 +1,4 @@
+#pragma once
 #include<fstream>
 #include<string>
 #include<unordered_set>
@@ -30,10 +31,11 @@ public:
 	bool contains(string const & s) const;
 		
 	static unsigned int editDistance(const string& s1, const string& s2);
+	static string sToLower(string s);
 
 private:
 	unordered_set<string> wordList;
-	static string sToLower(string s);
+	
 	vector<string> scanDictForRelatedWords(string const& s) const;
 	vector<string> generateRelatedWords(string const& s) const;
 	
