@@ -11,9 +11,9 @@ The following code plays the *word search game*. Given two words and a dictionar
 ###Method:
 
 Our program finds solutions to the word search game by performing a search. The default operation is A\*, using the [Levenshtein distance](https://en.wikipedia.org/wiki/Levenshtein_distance) from the current word to the goal as a heuristic. 
-To simplify discussion, we say that two strings A and B are *L-Adjacent* if their Levenshtein distance is 1. As such, a correct solution to the word search game is a series of L-Adjacent words.
+To simplify discussion, we say that two strings A and B are **L-Adjacent** if their Levenshtein distance is 1. As such, a correct solution to the word search game is a series of L-Adjacent words.
 
-We use the linux dictionary which can be found in */usr/share/dict/*, a copy of which is supplied in this repo. It is important to note that this is a _near_ english dictionary.
+We use the linux dictionary which can be found in **/usr/share/dict/**, a copy of which is supplied in this repo. It is important to note that this is a _near_ english dictionary.
 
 ###Results:
 
